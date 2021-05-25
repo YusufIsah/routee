@@ -17,16 +17,16 @@ public class WeatherAPIExerciseFour {
             .build();
 
     public static void main(String[] args) throws InterruptedException {
-       // System.out.println("Status code :: " +sendWhetherReport());
+
         var time = new Timer(); // Instantiate Timer Object
         var scheduledTask = new ScheduledTask(); // Instantiate SheduledTask class
         time.schedule(scheduledTask, 0, 600000);
 
         //for demo only.
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 1; i <= 12; i++) {
             System.out.println("Execution in Main Thread...." + i);
             Thread.sleep(600000);
-            if (i == 2) {
+            if (i == 10) {
                 System.out.println("Application Terminates");
                 System.exit(0);
             }
